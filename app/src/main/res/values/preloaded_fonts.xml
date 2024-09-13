@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/alike</item>
+        <item>@font/charm</item>
+        <item>@font/dancing_script</item>
+        <item>@font/gupter</item>
+        <item>@font/hind_madurai_medium</item>
+        <item>@font/mallanna</item>
+    </array>
+</resources>

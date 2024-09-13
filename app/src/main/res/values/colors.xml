@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="clneutral">#FFFFFF</color>
+    <color name="clbrandcolor">#E10BC5</color>
+    <color name="colsecondarycolor">#613F75</color>
+    <color name="colhint">#555150</color>
+    <color name="colblack">#000000</color>
+    <color name="collightpink">#FDC7FC</color>
+</resources>

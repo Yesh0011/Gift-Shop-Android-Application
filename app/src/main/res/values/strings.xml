@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">giftshop</string>
+    <string name="lblname">Gifuto</string>
+    <string name="lblquote">Unbox Joy on the Go</string>
+    <string name="btngetstarted">Get Started</string>
+    <string name="lbluser">Yeshani Niwarthana</string>
+    <string name="lblwelcome">Welcome Back!</string>
+    <string name="htsearch">Search here</string>
+    <string name="lblbannernews">Special Offers</string>
+    <string name="lbldiscription">For Birthdays on March...</string>
+    <string name="btnordernow">Order Now</string>
+    <string name="txtcategories">Categories</string>
+    <string name="lblbestchoice">Best Choice</string>
+    <string name="lbltitle">Teddy Bear\n</string>
+    <string name="price">Rs.2690.00</string>
+    <string name="Quantity">2</string>
+    <string name="teddydiscription">"The little Teddy Bear is 13.5cm high and comes in a sitting position. He has a fun ribbon around his neck that is tied off in a cute bow. The Teddy is made from the plushest, softest fabric, ideal for small children to play with and snuggle up to at bedtime. "</string>
+    <string name="addtocart">Add to cart</string>
+    <string name="carttopic">My Cart</string>
+    <string name="totalitems">Total Items</string>
+    <string name="ammount">Rs. 10380.00</string>
+    <string name="taxpayment">Rs. 500.00</string>
+    <string name="delammount">Rs. 200.00</string>
+    <string name="Finalpayment">Rs. 11180.00</string>
+    <string name="tax">Tax:</string>
+    <string name="delivery">Delivery</string>
+    <string name="totalbill">Total Bill</string>
+    <string name="checkout">Checkout</string>
+    <string name="cardteddyprice">Rs. 5380.00</string>
+    <string name="pricebag">Rs.5000.00</string>
+    <string name="itembag">"Teddy Bear "</string>
+    <string name="itemwatch">Leather Watch</string>
+    <string name="itemrose">Roses</string>
+    <string name="itemcake">Cake</string>
+    <string name="itemshoes">Shoes</string>
+    <string name="itemChoco">Chocolate</string>
+    <string name="lblcakeitemname">Cakes</string>
+    <string name="lblflowersitemname">Flowers</string>
+    <string name="lblgiftitemname">Gifts</string>
+    <string name="lblvouchers">Vouchers</string>
+    <string name="lblbuyerpro">Buyer Protection</string>
+    <string name="lblproyectiondetails">Get full refund if your order doesn\'t arrived, damaged or different within the protection time period.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lblgifts">Gifts</string>
+    <string name="lblbag">Bags</string>
+    <string name="lblmugs">Mugs</string>
+    <string name="lblprofile">Profile</string>
+    <string name="lblnameprofile">Name</string>
+    <string name="lbladdress">Address</string>
+    <string name="txtaddress">No 02, Temple Road , Maharagama</string>
+    <string name="lblcontactnu">Contact Number</string>
+    <string name="txtcontactno">0712365345</string>
+
+</resources>

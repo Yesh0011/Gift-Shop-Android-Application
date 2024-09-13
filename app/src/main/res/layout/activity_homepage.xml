@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/title1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cartbanner"
+    tools:context=".homepage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/clneutral"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-70dp">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrallview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="432dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/lbluser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/lbluser"
+                    android:textColor="@color/clbrandcolor"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/lblwelcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/lblwelcome"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/lbluser"
+                    app:layout_constraintTop_toBottomOf="@+id/lbluser" />
+
+                <ImageView
+                    android:id="@+id/imgprofilepichome"
+                    android:layout_width="64dp"
+                    android:layout_height="61dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="48dp"
+                    android:layout_marginBottom="51dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/lblwelcome"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/lbluser"
+                    app:layout_constraintVertical_bias="0.071"
+                    app:srcCompat="@drawable/profilephoto" />
+
+                <EditText
+                    android:id="@+id/editTextText3"
+                    android:layout_width="357dp"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="52dp"
+                    android:background="#E6B9DA"
+                    android:drawableStart="@android:drawable/ic_menu_search"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="@string/htsearch"
+                    android:inputType="text"
+                    android:textColorHint="@color/colhint"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblwelcome" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout2"
+                    android:layout_width="361dp"
+                    android:layout_height="146dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="52dp"
+                    android:background="@drawable/banner"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextText3">
+
+                    <ImageView
+                        android:id="@+id/imgbannerbackground"
+                        android:layout_width="158dp"
+                        android:layout_height="133dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginBottom="3dp"
+                        android:scaleType="fitStart"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:srcCompat="@drawable/bannerbackground" />
+
+                    <TextView
+                        android:id="@+id/lblbannernews"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="36dp"
+                        android:text="@string/lblbannernews"
+                        android:textColor="@color/collightpink"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imgbannerbackground"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/lbldiscription"
+                        android:layout_width="140dp"
+                        android:layout_height="37dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="30dp"
+                        android:text="@string/lbldiscription"
+                        android:textColor="@color/clneutral"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imgbannerbackground"
+                        app:layout_constraintTop_toBottomOf="@+id/lblbannernews" />
+
+                    <Button
+                        android:id="@+id/btnordernow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="42dp"
+                        android:backgroundTint="@color/clbrandcolor"
+                        android:text="@string/btnordernow"
+                        android:textColor="@color/clneutral"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imgbannerbackground"
+                        app:layout_constraintTop_toBottomOf="@+id/lbldiscription" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/txtcategories"
+                    android:textColor="@color/clbrandcolor"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/lblbestchoice"
+                    android:textColor="@color/clbrandcolor"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="426dp"
+                    android:layout_height="736dp"
+                    android:layout_marginTop="41dp"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toTopOf="@+id/textView11"
+                    tools:layout_editor_absoluteX="5dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="343dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="32dp"
+                        android:background="@drawable/cartbanner">
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="172dp"
+                            android:layout_height="57dp"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="33dp"
+                            android:layout_marginBottom="24dp"
+                            android:text="@string/itembag"
+                            android:textColor="@color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold|italic"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <ImageView
+                            android:id="@+id/imgteddydashboard"
+                            android:layout_width="85dp"
+                            android:layout_height="89dp"
+                            android:layout_marginStart="44dp"
+                            android:layout_marginTop="4dp"
+                            android:outlineProvider="paddedBounds"
+                            app:layout_constraintStart_toEndOf="@+id/textView18"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/teddy" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="343dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/cartbanner">
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="207dp"
+                            android:layout_height="58dp"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="33dp"
+                            android:layout_marginBottom="24dp"
+                            android:outlineProvider="bounds"
+                            android:text="@string/itemwatch"
+                            android:textColor="@color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold|italic"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <ImageView
+                            android:id="@+id/imgteddydashboard"
+                            android:layout_width="89dp"
+                            android:layout_height="93dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="4dp"
+                            app:layout_constraintStart_toEndOf="@+id/textView18"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/watch" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="343dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/cartbanner">
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="172dp"
+                            android:layout_height="57dp"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="33dp"
+                            android:layout_marginBottom="24dp"
+                            android:text="@string/itemrose"
+                            android:textColor="@color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold|italic"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <ImageView
+                            android:id="@+id/imgteddydashboard"
+                            android:layout_width="85dp"
+                            android:layout_height="89dp"
+                            android:layout_marginStart="44dp"
+                            android:layout_marginTop="4dp"
+                            app:layout_constraintStart_toEndOf="@+id/textView18"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/rose" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="343dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/cartbanner">
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="172dp"
+                            android:layout_height="57dp"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="33dp"
+                            android:layout_marginBottom="24dp"
+                            android:text="@string/itemcake"
+                            android:textColor="@color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold|italic"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <ImageView
+                            android:id="@+id/imgteddydashboard"
+                            android:layout_width="85dp"
+                            android:layout_height="89dp"
+                            android:layout_marginStart="44dp"
+                            android:layout_marginTop="4dp"
+                            app:layout_constraintStart_toEndOf="@+id/textView18"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/cake" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="343dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/cartbanner">
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="172dp"
+                            android:layout_height="57dp"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginBottom="24dp"
+                            android:text="@string/itemshoes"
+                            android:textColor="@color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold|italic"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <ImageView
+                            android:id="@+id/imgteddydashboard"
+                            android:layout_width="85dp"
+                            android:layout_height="89dp"
+                            android:layout_marginStart="44dp"
+                            android:layout_marginTop="4dp"
+                            app:layout_constraintStart_toEndOf="@+id/textView18"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/shoes" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="343dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/cartbanner">
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="172dp"
+                            android:layout_height="57dp"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="33dp"
+                            android:layout_marginBottom="24dp"
+                            android:text="@string/itemChoco"
+                            android:textColor="@color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold|italic"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <ImageView
+                            android:id="@+id/imgteddydashboard"
+                            android:layout_width="85dp"
+                            android:layout_height="89dp"
+                            android:layout_marginStart="44dp"
+                            android:layout_marginTop="4dp"
+                            app:layout_constraintStart_toEndOf="@+id/textView18"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/choco" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <ScrollView
+                    android:id="@+id/scrollView2"
+                    android:layout_width="657dp"
+                    android:layout_height="87dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="82dp"
+                            android:layout_height="82dp"
+                            android:layout_marginLeft="0dp"
+                            android:background="@drawable/cartbanner">
+
+                            <TextView
+                                android:id="@+id/lblcakeid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="@string/lblcakeitemname"
+                                android:textColor="@color/black"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.511"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/imgcakeid" />
+
+                            <ImageView
+                                android:id="@+id/imgcakeid"
+                                android:layout_width="56dp"
+                                android:layout_height="54dp"
+                                android:layout_marginStart="13dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="13dp"
+                                app:layout_constraintBottom_toTopOf="@+id/lblcakeid"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/cakespic" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="82dp"
+                            android:layout_height="82dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/cartbanner">
+
+                            <ImageView
+                                android:id="@+id/imgflowerid"
+                                android:layout_width="56dp"
+                                android:layout_height="54dp"
+                                android:layout_marginStart="13dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginEnd="13dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/flowers" />
+
+                            <TextView
+                                android:id="@+id/lblflowerid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="7dp"
+                                android:text="@string/lblflowersitemname"
+                                android:textColor="@color/colblack"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/imgflowerid"
+                                app:layout_constraintVertical_bias="1.0" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="82dp"
+                            android:layout_height="82dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/cartbanner">
+
+                            <ImageView
+                                android:id="@+id/imggidtid"
+                                android:layout_width="50dp"
+                                android:layout_height="52dp"
+                                android:layout_marginStart="13dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="13dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/gifts" />
+
+                            <TextView
+                                android:id="@+id/lblgiftid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="@string/lblgifts"
+                                android:textColor="@color/colblack"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/imggidtid"
+                                app:layout_constraintVertical_bias="1.0" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="82dp"
+                            android:layout_height="82dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/cartbanner">
+
+                            <ImageView
+                                android:id="@+id/imgvoucherid"
+                                android:layout_width="54dp"
+                                android:layout_height="54dp"
+                                android:layout_marginStart="12dp"
+                                app:layout_constraintBottom_toTopOf="@+id/lblvoucherid"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0"
+                                app:srcCompat="@drawable/vouchers" />
+
+                            <TextView
+                                android:id="@+id/lblvoucherid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginBottom="7dp"
+                                android:text="@string/lblvouchers"
+                                android:textColor="@color/colblack"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/navhome"
+                android:layout_width="50dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/home" />
+
+            <ImageView
+                android:id="@+id/navnotifi"
+                android:layout_width="50dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/notifications" />
+
+            <ImageView
+                android:id="@+id/navprofile"
+                android:layout_width="50dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/profilepage" />
+
+            <ImageView
+                android:id="@+id/navcart"
+                android:layout_width="50dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/cartblack" />
+        </LinearLayout>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
